@@ -1,0 +1,6 @@
+// To work with css
+
+1. npx tailwindcss -i src\main\resources\static\css\input.css -o src\main\resources\static\css\output.css --watch
+2. include output.css in your html
+3. for flowbite include css and js via
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
