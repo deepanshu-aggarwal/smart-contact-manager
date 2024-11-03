@@ -1,9 +1,26 @@
-<div class="parent-fragment" th:fragment="parent(content)">
-  <h1>This is lorem ipsum</h1>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, debitis!</p>
-  <div th:replace="${content}"></div>
-</div>
+<!DOCTYPE html>
+<html lang="en" th:fragment="parent(title,content,script)" xmlns:th="http://www.thymeleaf.org">
 
-<div th:fragment="test(content)">
-  <div th:replace="${content}"></div>
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" data-th-href="@{/css/output.css}">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  <title data-th-replace="${title}">SCM</title>
+</head>
+
+<body>
+  <!-- Common header -->
+
+  
+  <!-- Main content -->
+  <section data-th-replace="${content}"></section>
+
+  <!-- Common footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <th:block data-th-replace="${script}"></th:block>
+</body>
+
+</html>

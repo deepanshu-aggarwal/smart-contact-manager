@@ -1,30 +1,11 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{:: title}, ~{:: #content}, ~{})}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" data-th-href="@{/css/output.css}">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-    <title>Document</title>
+  <title>Home page</title>
 </head>
-
 <body>
-    <div th:insert="base :: parent"></div>
-    <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4 flex flex-col space-y-3 items-center">
-        <h1 class="text-2xl font-bold">Welcome to home page</h1>
-        <p class="text-xl text-gray-700">Lorem ipsum dolor sit amet. Et praesentium praesentium et Quis beatae sit
-            quibusdam molestias est omnis explicabo est voluptas quidem. Et aliquam suscipit hic dolores corporis in
-            nihil vitae ab minima amet est repudiandae voluptates qui amet vero. </p>
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-        <p class="text-xl text-gray-700">Qui blanditiis deserunt in quia enim in natus impedit et odit mollitia est
-            consequatur blanditiis. Aut unde omnis sed voluptas laboriosam aut enim consequatur. </p>
-        <p class="text-xl text-gray-700">In Quis laudantium vel asperiores dicta ad vero sequi! Aut pariatur porro et
-            sunt voluptatem eos rerum atque ut cupiditate vitae qui rerum rerum non modi eligendi. </p>
-        <div>
-            <button class="p-3 rounded bg-blue-700 hover:bg-blue-600 text-white">Click here</button>
-        </div>
-    </div>
+  <div id="content">
+    <h1>home page</h1>
+  </div>
 </body>
-
 </html>

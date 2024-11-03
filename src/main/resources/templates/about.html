@@ -1,23 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{:: title}, ~{:: #content}, ~{})}">
 <head>
-    <meta charset="UTF-8">
-    <title>About</title>
+  <title>About page</title>
 </head>
 <body>
-  <div class="host-tag" th:replace="${isLogin} ? ~{base :: parent(~{::#logged_in})} : ~{base :: test(~{::#not_logged_in})}">
-    <section id="logged_in">
-      <h1>User is logged in</h1>
-      <h2>Dynamic content</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum sequi sit eveniet at fuga tenetur necessitatibus excepturi, libero molestiae ad.</p>
-      <button>Click on dynamic content</button>
-    </section>
-    <section id="not_logged_in">
-      <h1>User not logged in</h1>
-    </section>
+  <div id="content">
+    <h1>about us</h1>
   </div>
-  <h1>This is about page</h1>
-  <hr />
-  <div>about page</div>
 </body>
 </html>
